@@ -1,0 +1,142 @@
+<mxfile host="drawio-plugin" modified="2024-10-28T11:00:21.944Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="qN_1cFzWvZWcQRZc63EM" version="22.1.22" type="embed">
+  <diagram name="Page-1" id="4QG_E-McuaAFlz99egu9">
+    <mxGraphModel dx="719" dy="1119" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MEOIYAJRdS42SvChZSfe-14" value="Deployable&lt;div&gt;Unit&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="540" y="270" width="365" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-1" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Problem statement&lt;/h1&gt;&lt;p&gt;Design a system that collects application performance metrics. Imagine you work at a large company that runs thousands of services. For all these services, we want to collect performance metrics such as throughput (number of requests processed per minute), errors (number of requests that fail), average response time, etc. Service owners should be able to see their per-minute service metrics in the dashboard.&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="20" width="740" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="MEOIYAJRdS42SvChZSfe-2" target="MEOIYAJRdS42SvChZSfe-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-2" value="Service Owners" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.user;" parent="1" vertex="1">
+          <mxGeometry x="142" y="714" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="MEOIYAJRdS42SvChZSfe-3" target="MEOIYAJRdS42SvChZSfe-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-3" value="Service Dashboard&lt;br&gt;Application" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/general/Dashboard2.svg;" parent="1" vertex="1">
+          <mxGeometry x="281" y="710" width="68" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-5" value="Metric Database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="224" y="290" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-7" value="Metric Query Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.013;entryY=0.575;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="MEOIYAJRdS42SvChZSfe-7" target="MEOIYAJRdS42SvChZSfe-8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="254" y="540" as="sourcePoint" />
+            <mxPoint x="254" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-11" value="Read Through" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MEOIYAJRdS42SvChZSfe-10" vertex="1" connectable="0">
+          <mxGeometry x="0.152" y="-4" relative="1" as="geometry">
+            <mxPoint x="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-8" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" parent="1" vertex="1">
+          <mxGeometry x="229" y="430" width="50" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="MEOIYAJRdS42SvChZSfe-12" target="MEOIYAJRdS42SvChZSfe-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-12" value="Any Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="780" y="300" width="115" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="MEOIYAJRdS42SvChZSfe-13" target="MEOIYAJRdS42SvChZSfe-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="MEOIYAJRdS42SvChZSfe-13" target="MEOIYAJRdS42SvChZSfe-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-21" value="Responses" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MEOIYAJRdS42SvChZSfe-19" vertex="1" connectable="0">
+          <mxGeometry x="-0.4898" y="-2" relative="1" as="geometry">
+            <mxPoint x="-32" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-13" value="Service Proxy&lt;br&gt;Sidecar" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="MEOIYAJRdS42SvChZSfe-15" target="MEOIYAJRdS42SvChZSfe-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-20" value="Requests" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MEOIYAJRdS42SvChZSfe-16" vertex="1" connectable="0">
+          <mxGeometry x="0.4253" y="-1" relative="1" as="geometry">
+            <mxPoint x="31" y="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-15" value="Any Consumer" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="MEOIYAJRdS42SvChZSfe-32" target="MEOIYAJRdS42SvChZSfe-26" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="492.0000000000002" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-26" value="Metric Ingestor&lt;br&gt;Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="MEOIYAJRdS42SvChZSfe-26" target="MEOIYAJRdS42SvChZSfe-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="MEOIYAJRdS42SvChZSfe-13" target="MEOIYAJRdS42SvChZSfe-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="360" as="sourcePoint" />
+            <mxPoint x="566" y="492" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-34" value="Publish metrics" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MEOIYAJRdS42SvChZSfe-33" vertex="1" connectable="0">
+          <mxGeometry x="-0.5113" relative="1" as="geometry">
+            <mxPoint y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" target="MEOIYAJRdS42SvChZSfe-32" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="492.0000000000002" as="sourcePoint" />
+            <mxPoint x="410" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-32" value="Messaging System&lt;div&gt;with partitioning&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.queue;fillColor=#D9A741;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="500" y="460" width="73.5" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1.02;entryY=0.476;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="MEOIYAJRdS42SvChZSfe-26" target="MEOIYAJRdS42SvChZSfe-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-47" value="(Optional)&lt;br&gt;Write Data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MEOIYAJRdS42SvChZSfe-36" vertex="1" connectable="0">
+          <mxGeometry x="0.4649" relative="1" as="geometry">
+            <mxPoint y="20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="MEOIYAJRdS42SvChZSfe-8" target="MEOIYAJRdS42SvChZSfe-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-40" value="Metric Purging Service" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="194" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="MEOIYAJRdS42SvChZSfe-40" target="MEOIYAJRdS42SvChZSfe-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-42" value="Purge old data" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MEOIYAJRdS42SvChZSfe-41" vertex="1" connectable="0">
+          <mxGeometry x="0.0238" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="MEOIYAJRdS42SvChZSfe-44" target="MEOIYAJRdS42SvChZSfe-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MEOIYAJRdS42SvChZSfe-44" value="API Gateway" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="580" width="270" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
