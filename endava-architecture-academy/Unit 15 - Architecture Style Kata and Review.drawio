@@ -1,14 +1,11 @@
-<mxfile host="drawio-plugin" modified="2025-03-03T05:06:27.150Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" version="22.1.22" etag="G2SVELgj93dYP1wAam22" type="embed">
+<mxfile host="drawio-plugin" modified="2025-03-03T08:05:51.052Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" version="22.1.22" etag="sf61hdQQnszqt2lWzcT7" type="embed">
   <diagram id="NWOu2UBloviNoaQFvjoQ" name="Page-1">
-    <mxGraphModel dx="2082" dy="1888" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="5153" dy="2178" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="38" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="38" value="VPC" style="rounded=0;whiteSpace=wrap;html=1;align=right;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="480" y="-30" width="940" height="740" as="geometry" />
-        </mxCell>
-        <mxCell id="33" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="120" width="710" height="430" as="geometry" />
         </mxCell>
         <mxCell id="2" value="Student" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="-90" y="160" width="30" height="60" as="geometry" />
@@ -190,6 +187,15 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="61" target="72">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="179" />
+              <mxPoint x="700" y="530" />
+              <mxPoint x="940" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="61" value="Test Executions&lt;br&gt;Service" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#ED7100;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_2;" vertex="1" parent="1">
           <mxGeometry x="720" y="149" width="91.35" height="59" as="geometry" />
         </mxCell>
@@ -225,7 +231,7 @@
         <mxCell id="71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="69" target="65">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="69" value="Test Answers Queue" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.queue_generic;pointerEvents=1;" vertex="1" parent="1">
+        <mxCell id="69" value="Test Answers &lt;br&gt;Topic (Kafka)" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.queue_generic;pointerEvents=1;" vertex="1" parent="1">
           <mxGeometry x="890.3299999999999" y="158.5" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="61" target="69">
@@ -279,6 +285,14 @@
         </mxCell>
         <mxCell id="97" value="Test Reports&lt;br&gt;DB" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;fillColor=#C925D1;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.dynamodb;" vertex="1" parent="1">
           <mxGeometry x="1281.6799999999998" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="100" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.263;entryY=-0.088;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="80" target="11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="935" y="300" />
+              <mxPoint x="744" y="300" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
