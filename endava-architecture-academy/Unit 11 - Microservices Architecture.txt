@@ -1,0 +1,15 @@
+1. Describe the bounded context concept and explain why it is so critical for Microservices?
+    - Share nothing architecture: Data, Logic, Infrastructures
+    - This ensures that a microservice is single-purpose, separately deployed unit of software that does one thing really well
+    - Improves system agility, deployment, testability, scalability, fault-tolerance, extensibility
+2. Why is the performance characteristics rated only 2 stars for Microservices?
+    - Remote calls and interactions via network greatly increase operation latency comparing to traditional monolith systems.
+3. Name three things that separate Microservices from all other architecture styles:
+    - Each service is a separately deployed unit
+    - Each service maintains share nothing architecture: it has own Data, Logic, Infrastructures
+    - Microservices demand operational automation to be able to manage hundreds or thousands of independent deployable services.
+    This architecture may also demand organisation structure changes so that teams and people are divided into different domains.
+4. List 5 main drivers for why you would use Microservices architecture style
+    - agility, deployment, testability, scalability, fault-tolerance, extensibility
+5. Suppose you have a service containing 150 class files. Would this be considered a "microservice"?
+    - If the service implements Share nothing architecture then it is a microservice.

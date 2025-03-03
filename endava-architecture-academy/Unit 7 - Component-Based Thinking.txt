@@ -1,0 +1,19 @@
+1. Within distributed architectures, what is the relationship between a component and a service?
+    - many to one
+    - can be one-to-one sometimes in microservices architecture.
+2. List the 5 steps involved with identifying components when creating a logical architecture
+    - identify initial core components
+    - assign user stories to components
+    - analyse roles and responsibility statements
+    - analyse non-functional aspects
+    - refactor components as needed
+3. What is temporal coupling?
+    - components are coupled due to non-static or timing dependencies
+4. Should you always strive for lose coupling between components? Why?
+    - No. Having lose coupling components is trading-off centralised workflow control, error handling and business knowledge
+    for better agility, testability, scaling, maintainability, etc. Some organisations may not want to have this trade-off
+5. Component C manages customer profile information, order history, and customer billing. Would you say this component has high or low cohesion?
+    - This components has low cohesion as its responsibilities are not related.
+6. What is meant by the "entity trap" when identifying core components?
+    - Derive components directly from the entities mentioned in requirements. This leads to ambitious and too coarse-grained components
+    with often a high level of coupling.

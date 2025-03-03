@@ -1,0 +1,50 @@
+Candidate Characteristics
+1. Performance
+2. Responsiveness
+3. Availability
+4. Fault tolerance
+5. Testability
+6. Extensibility
+7. Agility
+8. Reliability
+9. Security
+10. Recoverability
+11. Interoperability
+12. Concurrency
+13. Adaptability
+14. Scalability
+15. Modularity
+16. Data Integrity
+17. Deployability
+18. Workflow
+19. Abstraction
+20. Cost
+21. Simplicity
+22. Elasticity
+23. Configurability
+24. Integration
+
+Implicit Characteristics
+1. Feasibility
+2. Security
+3. Reliability
+4. Maintainability
+
+Driving Characteristics
+1. Responsiveness
+2. Security
+3. Reliability
+4. Availability
+5. Elasticity
+6. Data Integrity
+7. Feasibility
+
+Top 3 Characteristics
+1. Responsiveness
+2. Data Integrity
+3. Elasticity
+
+Other considered
+1. Recoverability
+2. Simplicity
+3. Scalability

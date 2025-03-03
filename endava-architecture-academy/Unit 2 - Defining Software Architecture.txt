@@ -1,0 +1,9 @@
+1. Software Architecture is hard to define. What are some of the ways you can break software architecture down to help define it?
+    - System structures and Processes
+2. List the 4 dimensions of software architecture
+    - Characteristics (Non-Functional Requirements),
+    - Components,
+    - Styles (Microservices, Event Driven, etc.),
+    - Decisions (that bring the other 3 dimensions together)
+3. Why is it not sufficient to say "our architecture is microservices"?
+    - Because this only cover one of the architecture dimensions which is Architecture Style.

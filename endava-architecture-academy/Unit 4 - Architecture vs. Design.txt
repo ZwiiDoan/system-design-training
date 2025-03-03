@@ -1,0 +1,14 @@
+1. Where does architecture end and design begin?
+    - architecture design become the initial version of the system architecture which will be re-iterated and refined by
+    lower-level designs.
+2. What is the difference between communication and collaboration?
+    - communication is one of the collaboration activities which help different parties to exchange information. Other collaboration
+    activities include but not limited to providing feedback on, updating or creating artefacts, dividing, assigning and directly
+    working on tasks of the same job/common goal.
+3. Of the following people, which ones must an architect collaborate with to ensure the success of a system?
+    A. Head of operations
+    B. Software developers
+    C. Project manager
+    D. Product owner
+    E. Sales manager
+    => All of them

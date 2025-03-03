@@ -1,0 +1,14 @@
+1. Which is generally more scalable and responsive - the broker topology or mediator topology? Why?
+    - broker topology since mediator topology requires blocking calls and middle man layer who requires response from event processors.
+2. Which topology typically leverages publish-and-subscribe (topic-based) messaging for most of its processing?
+    - broker topology
+3. What are some of the tradeoffs when leveraging asynchronicity to increase responsiveness when posting a request (such as a comment)?
+    - error handling and recovery
+    - system complexity
+    - business flow tracking
+4. Explain some of the reasons why Event-Driven architecture has a 5-star rating for overall performance.
+    - event processors utilise asynchronous processing to minimise CPU blocking/idle time
+    - event processors are independent from each other, they don't need to wait for any other processing flows.
+5. What is the difference between performance and responsiveness?
+    - responsiveness is the time it takes a system to respond to an event/user action, i.e: action acknowledgement
+    - performance is the time it takes a system to fully process an event/user action, i.e: time taken to process and return data to end user.

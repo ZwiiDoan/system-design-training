@@ -1,0 +1,18 @@
+- Core System + independent plugins which can be anything from a code package, library or a micro-service.
+- Example: Browsers, IDEs
+- Core system has a plugin registry to maintain plugins
+- Strong evolvability, adaptability
+
+1. What is another name for the Microkernel architecture style?
+    - Plugin architecture pattern
+2. Under what situations is it okay for plugin-in components to be dependent on each another?
+    - That's an anti-pattern and not appropriate under any situation.
+3. Name three ways a plugin-in component can be implemented
+    - Plugins are in the same code base as core systems but under separated packages, i.e: app.plugin.assessment.iphone6s
+    - Plugins are separated libraries that core system can invoked via interface/contract methods
+    - Plugins are standalone applications/micro-services that core system can interact with via messaging/HTTP calls.
+4. Provide at least two examples of applications of tools that use Microkernel architecture that you likely use on a regular basis
+    - Web Browsers
+    - IDEs
+5. Name four architecture characteristics Microkernel architecture supports better than the traditional layered monolithic architecture.
+    - Agility, Deployment, Testability, Evolvability

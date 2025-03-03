@@ -1,0 +1,13 @@
+1. What is meant by the phrase "things you know you don't know"? Provide an example of this area for you personally
+    - Things you are aware of their existence but do not know much about them
+    - e.g: AI Agents
+2. Why is it more important for a software architect to focus on technical breadth more than technical depth?
+    - Because a software architect may have to work with and provide solution for systems of multiple tech stacks that
+    require a breadth of knowledge about all these technologies to make informed decisions rather than knowing each
+    of the technology in-depth (which is impossible due to the amount of knowledge and brain power that requires).
+    - Understand trends, have multiple options when building a solution.
+3. What is Tone.js and what is it used for? In what area of the knowledge triangle did this first appear for you? Where
+    in your knowledge triangle is it now?
+    - https://www.perplexity.ai/search/what-is-tone-js-and-what-is-it-I1Xu_BCPSoOpeiyPMSvq6A#0
+    - Don't know don't know
+    - Know don't know

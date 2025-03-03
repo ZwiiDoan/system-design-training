@@ -1,0 +1,16 @@
+1. Which characteristic is most important to focus on - performance or availability?
+    - This depends on specific application, one can be more important than the other in different applications.
+2. What is the difference between scalability and elasticity?
+    - Scalability = System can gradually scale to handle increased load overtime with expected performance.
+    - Elasticity = System can respond quickly to load spike and perform with an acceptable performance.
+3. What is the difference between responsiveness and performance?
+    - Responsiveness = How fast the system can give feedback for a user/consumer action, although it may be still processing it behind the scene.
+    - Performance = How fast the system can fulfill/completely process a user/consumer action.
+4. Why is it important to limit the number of driving characteristics for a system?
+    - So that architect can focus on the most essential characteristics of a system and deliver a feasible architecture.
+    Too many characteristics will make it impossible to come up with a successful architecture since none can satisty all the characteristics.
+5. What steps would you take to arrive at the final list of driving characteristics?
+    - Limit the number of characteristics to a small number such as 7
+    - Ask stakeholders to pick out the top 3 - 5 characteristics
+6. What is meant by the "cart before the horse" anti-pattern?
+    - Making architectural decision before really understand the business requirements.

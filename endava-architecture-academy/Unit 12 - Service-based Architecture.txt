@@ -1,0 +1,17 @@
+1. Are you required to break apart a monolithic database in Service-Based Architecture? Why?
+    - No. Because with a small number of applications, DB changes are manageable. Furthermore, the DB can be logically
+        divided into different set of tables for each domain service. Each table set with have a corresponding library
+        for access layer implementations which can be shared a cross many services.
+2. Do domain services require containerization (such as Docker)?
+    - No. Mainly due to the small number of services, they can be deployed and operated by a centralised DevOps team
+        with more traditional/manual processes.
+3. Why does elasticity only rate 2 stars for Service-Based architecture?
+    - Because these services are big and will have high start-up time
+4. Why is Service-Based architecture so much less complicated (and costly) then Microservices?
+    - Small number of services => less operation and support required
+    - Can share the same DB with logical separated sets of tables => less data management effort
+5. Describe why Service-Based architecture is a good stepping-stone when moving to (or creating new_ Microservices applications.
+    - It allows a transition period between monolith and microservices architectures when the shared DB and the small number of services
+        have not demanded operational and organisational changes.
+    - It allows teams to assess which parts of the system should become microservices to support agility (frequent changes),
+        scalability, testability, deployment, fault-tolerance and extensibility.

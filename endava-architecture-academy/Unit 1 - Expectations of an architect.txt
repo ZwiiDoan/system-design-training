@@ -1,0 +1,14 @@
+1. Why is it so important for an architect to continually analyse an architecture?
+    - Ensure Architecture Vitality.
+    - Business changes and evolves => new requirements
+    - Technologies change and evolves => better solutions and opportunities arise
+    - Business always want to have process and tools optimisations to reduce cost
+2. Why are negotiation and facilitation skills so critical for a software architect?
+    - Architectural decisions often have large impacts on different systems and people, which leads to more conflicts and push backs
+3. Should it be expected that all software architects be able to effectively develop code as well?
+    - Not necessary. However, it is a good thing to do to gain deeper knowledge about technologies and make more informed decisions
+4. List some of the ways a software architect can maintain their programming skills while performing the activities of an architect
+    - Doing POCs
+    - Implementing automated architectural verification tools (i.e ArchUnit)
+    - Develop tools to support development team.
+    - Implementing simple features of the project to code along with the team.

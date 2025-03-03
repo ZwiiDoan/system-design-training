@@ -1,0 +1,11 @@
+1. Why is it critical to have the right architecture style in place for a system?
+    - Because each architecture style carries different characteristics and limitations that decide how well it suits a system.
+2. Describe a situation where you encountered one (or more) or the 8 fallacies of distributed computing and realised a "lesson learned" from it.
+    - transport cost is zero: In many projects we had to reduce the amount of data transferred between services to reduce overall operation cost
+3. What is fallacy #3 of distributed computing? Why is that particular fallacy so critical within the Microservices architecture style?
+    - #3 bandwidth is infinite: network bandwidth is limited by service provider. Transferring too much data over the network will cause loss of data
+        and performance degrades.
+4. What two measurements are necessary for overcoming fallacy #2 of distributed computing?
+    - Average response time
+    - 95 - 99 percentile response time
+    These will decide if a new distributed system can uphold SLA which decides its feasibility

@@ -1,0 +1,20 @@
+1. Where does Space-Based architecture get its name from?
+    - The concept of tuple space: SBA is inspired by the technique of using multiple parallel processors communicating
+        through shared memory, which is known as tuple space
+2. What unique feature separates Space-Based architecture from other architecture styles?
+    - It separates processing layer and persistence layer by using a message layer in between
+    - processors rarely need to communicate directly with database. They read and write data directly against the shared cache (tuple space)
+    - processors publish data to DB asynchronously using the message layer (queues or topics). Writers consume those messages
+        and persist data into database.
+    - in some edge cases, processors may need to read data from DB via the message layer with the help of Reader services.
+3, Name three scenarios in which a processing unit would be required to read data from the database.
+    - All processor instances go down so as the shared cache. When they come back-up, data will need to be read from DB to re-populate the shared cache..
+    - All processor instances need to be redeployed with new version that is not compatible with the old cache structure.
+    - There is not enough space in the shared cache to store all required data.
+4. List 3 reasons why you would choose to use Space-Based architecture.
+    - performance
+    - scalability
+    - elasticity
+5. Why does testability rate so low for Space-Based architecture?
+    - Because testing high volume is expensive and big test data is hard to be prepared. This means we normally have to observe the load in production
+        instead of testing it in lower environment.
