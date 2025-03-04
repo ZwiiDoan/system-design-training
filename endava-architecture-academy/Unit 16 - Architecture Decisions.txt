@@ -1,0 +1,17 @@
+1. What is the “second law of software architecture”?
+    - Why is more important then how
+
+2. What are the five basic sections of an architecture decision record?
+    - Title: Short noun phrase
+    - Status: for instances, proposed, accepted, superseded (forces criteria for knowing when an architect must seek approval for a decision)
+    - Context: forces at play (description of the problem and alternative solutions available)
+    - Decision: Response to forces with justification (the "why")
+    - Consequences: Context after decision is applied (tradeoffs and impact of decision)
+
+3. In what section of an ADR would you document your tradeoff analysis?
+    - Consequences
+
+4. List three possible criteria for knowing when you can approve your own architecture decision or whether you need to seek approval.
+    - The decision impact external stakeholders and teams
+    - The decision requires security review
+    - The decision requires additional resources/costs

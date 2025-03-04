@@ -1,0 +1,17 @@
+                            | Elasticity | Data Loss | Security
+________________________________________________________________
+Reporting Service           | 1          | 1         | 1
+Student Information Service | 3          | 1         | 1
+Test Management Service     | 3          | 3         | 3
+Rosters Management Service  | 6          | 3         | 3
+Test Executor Service       | 3          | 3         | 3
+Test Grader Service         | 1          | 3         | 3
+
+- Test Executor Service can preload test data into its cache
+- Test Grader Service can preload test answers into its cache
+- Rosters DB is a NoSQL DB Cluster to ensure quick student sign-in validations against rosters data,
+    Rosters Management Service also use a distributed in-memory cache (such as Hazelcast) to preload rosters data for the day
+- Every DB in the system must be in cluster mode to be high performant and has data replication/backup. They also maintain only
+    recent data for test executions and report generations. Older data will be archived in cold storage such as AWS Glacier or S3
+    and only be rarely accessed.
+- Student Answers Topic must be on a broker cluster such as Kafka to be high performant and has data replication/backup/durability

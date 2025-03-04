@@ -1,0 +1,14 @@
+1. What are the two dimensions of the risk assessment matrix?
+    - dimension 1: likelihood of risk occurring
+    - dimension 2: overall impact of risk
+    - total score = dimension 1 * dimension 2
+2. Why is it necessary for risk storming to be a collaborative exercise?
+    - so that everyone gets involved, contributes, and is aware of risks in the systems
+    - reach consensus on risks in the systems
+    - everyone has different expertises and insights in different areas of the systems so that they can identify different risks and impacts.
+3. What risk rating (1 - 9) would you assign for unproven or unknown technology?
+    - 6 or 9: likelihood of occurring is high (3) due to lack of expertise in the team as well as support and maturity of the technology,
+        overall impact of risk can be medium (2) or high (3) depending on how much the technology is used in the system.
+4. Why is it necessary that the risk identification phase of risk storming be an individual exercise?
+    - different people can have different insights and focus on different risk areas
+    - eliminate the influence of others on ones opinions so that no legit risk concern will be suppressed.
