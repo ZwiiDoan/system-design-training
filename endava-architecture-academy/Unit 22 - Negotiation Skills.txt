@@ -1,0 +1,14 @@
+1. Why are negotiation skills so important as a software architect?
+    - Because his/her work often have big impacts on different stakeholders which can generate conflicts and disagreements.
+
+2. What is the “divide and conquer” rule and why is it important for negotiation?
+    - Divide a big and vague topic into smaller and clear topics to have simpler and more efficient discussions.
+
+3. What are some negotiation skills you can use as an architect when the development team doesn't agree with your decision?
+    - Demonstration defeats discussion
+    - Objectify your results
+    - Justify your decision
+    - Involve developers in your decision (collaborate)
+
+4. What is an “influential developer” and why is it so important as an architect to get that person on your side?
+    - Winning the most influential developer to your side will minimize efforts required to convince the whole developer team

@@ -1,0 +1,19 @@
+1. Name three warning signs that mean your development team might be too big.
+	- Process loss
+	- Pluralistic ignorance (afraid of raising opinions as they think they are missing something obvious)
+	- Diffusion of responsibility (miscommunications, unclear of responsibilities and roles, lost of direction to progress, etc.)
+
+2. What are three basic types of architect personalities?
+	- Control freak architect (apply too much controls over the team and suppress their ideas/engineering practices)
+	- Effective architect (the balance type)
+	- Amrchair architect (does not produce useful artefacts)
+
+3. What are the five main factors that go into determining the level of control you should exhibit on a development team?
+	- Team familiarity: the more familiar with each other the team, the less control required
+	- Team size: the higher the team size, the more control required (highest weighted factor)
+	- Overall experience: the more experienced the team, the less control required (second-highest weighted factor)
+	- Project complexity: the more complexity the project, the more control required
+	- Project duration: the longer the project, the more control required
+
+4. If checklists are so effective, then why not make everything a development team does a checklist?
+	- The longer and the more checklists that a team have, the less frequent they are used or executed accurately.

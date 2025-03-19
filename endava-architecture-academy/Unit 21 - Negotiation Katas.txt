@@ -1,0 +1,79 @@
+Scenario 1: The Scala Problem
+One of your developers is pushing hard for using Scala, and it is driving the other team members crazy. 
+Because of this developer the team is falling apart, and some team members are threatening to leave the project.
+	- Let the developer present to the team benefits of using Scala, business justification, as well as the drawbacks of using it. Let everyone provide constructive feedbacks.
+	- Host a meeting with all developers and use the majority votes to decide whether team should adopt Scala. Worst case scenario, one developer will leave the project.
+------------------------------------------------------------------------------------------------------------------------
+    - Have the developer provide a business justification
+    - Have the developer arrive at the solution on their own
+    - Demonstrate the impact on timelines, cost, and other factors
+
+Scenario 2: The Communication Protocol Issue
+You made the decision to use messaging to communicate between microservices to increase scalability and performance, but your team
+doesn't agree and decide to use REST instead because they feel it would satisfy the scalability and performance needs just as easily.
+	- Present statistics and evidence to the team if they are available or do POC to get those data, also ask the team to do the same for their approach.
+	- Let the team decide based on concrete data and evidence. The team approach can also be the winner from this.
+------------------------------------------------------------------------------------------------------------------------
+    - Demonstration defeats discussion
+    - Objectify your results
+    - Justify your decision
+    - Involve developers in your decision (collaborate)
+
+Scenario 3: The Architecture Team Problem
+No one on the architecture team is getting along, and each architect has a different opinion about the new architecture.
+As the lead architect on the project, you are in a stalemate situation and as a result nothing is getting done.
+	- Gather all architects and get them aligned on a common set of business goals and architecture characteristics
+	- Let them provide documentations and presentations for their views of the architecture, constructively build a common target architecture.
+------------------------------------------------------------------------------------------------------------------------
+    - Know when to "let it go"
+    - Make sure you listen and keep an open mind to other ideas
+    - Use the mediator technique:
+        - emphasis on collective knowledge and unified vision
+        - every suggestion needs both justifications and trade-offs
+        - mediator decides
+
+Scenario 4: The Availability Disagreement
+The project sponsor (and senior VIP) is insistent that the new application must support “five nines” of availability (99.999%).
+You respond that “three nines” (99.9%) would be sufficient. The project sponsor gets irritated and tells you to ensure “five nines”
+of availability and to get out of their office.
+	- Provide statistics and evidence to the project sponsor about why 99.9% is sufficient. 
+	- Compare different aspects between the two options, focusing on time, budget and quality aspects of each option and let the sponsor decide.
+------------------------------------------------------------------------------------------------------------------------
+    - Try to understand the persons rationale for their demand (Why?)
+    - Change the grammar from 9's to seconds
+    - Divide and conquer (Do all parts of the system need that availability?)
+    - Objectify and discuss the cost and timeline implications
+
+Scenario 5: The Approval Issue
+As the application architect on the new project, your job is to define the architecture and make architecture decisions. However,
+your boss (the lead architect for the department) insists that every decision you make must go through them for approval. This
+unnecessary approval process is slowing the project to a crawl.
+	- Provide lead architect and the team with live dashboards and reports that monitor different characteristics of the system.
+	- Always propose application architecture along with statistics and evidences, do POC if possible to gain trusts
+	- After a few successful release, convince lead architect to delegate the approval process.
+------------------------------------------------------------------------------------------------------------------------
+    - Work to objectify decision criteria for acceptance or approval
+    - Develop trust and respect
+
+===== DEMONSTRATION DEFEATS DISCUSSION
+
+===== DIVIDE AND CONQUER
+	- If their forces are united, separate them.
+
+===== FOCUS THE CONVERSATION ON BUSINESS VALUE
+	- Business stakeholders do not understand technical terms and problems.
+
+===== IDENTIFY THE INFLUENTIAL DEVELOPER
+	- Winning the most influential developer to your side will minimize efforts required to convince the whole developer team
+
+===== INVOLVE DEVELOPERS IN YOUR ARCHITECTURE DECISIONS
+	- Developers will be more likely to agree to architecture decisions if they understand why were they made
+
+===== OBJECTIFY NEEDS RATHER THAN FOCUSING THE DISCUSSION ON VAGUE GRAMMAR
+	- Interpret the real concerns behind a discussion.
+
+===== STATE THINGS IN TERMS THAT HELP YOUR ARGUMENT AND MAKE IT SOUND REASONABLE
+
+===== IF ALL ELSE FAILS, TURN THE NEGOTIATION INTO TERMS OF INCREASED COST OR TIMELINES
+	- Should be done at the end of the negotiation as it may not be the main problem
+	- Objectify the statistics

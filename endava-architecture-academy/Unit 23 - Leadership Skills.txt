@@ -1,0 +1,19 @@
+1. What is meant by “accidental complexity”?
+    - Make a problem more complex than it should be
+
+2. List the “4 C’s” of being an effective software architect.
+    - Communicate effectively
+    - Collaborate
+    - Clarity: talk about architecture with clear and simple terms
+    - Concise
+
+3. What are some ways you can gain the respect of your development team?
+    - Know when to "let it go"
+    - Demonstration defeats discussion
+    - Leverage basic people skills and try to be polite, reasonable, and "on the person's side"
+    - Take the initiative to lead the team, regardless of your role
+
+4. List one or two things you learned in this class that you would be willing to present to your development team
+during a morning meeting or “lunch and learn session”. Why is this important?
+    - I will present different architectures to the team and work with them on Architecture style Kata.
+    - This is important to uplift team knowledge and skills, improve team work and knowledge sharing.
