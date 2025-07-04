@@ -1,3 +1,6 @@
 .idea
 *.bkp
 *.iml
+.terraform/
+*.tfstate
+*.tfstate.backup
