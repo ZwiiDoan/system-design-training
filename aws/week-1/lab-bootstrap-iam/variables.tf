@@ -5,4 +5,5 @@ variable "aws_region" {
 
 variable "user_name" {
   description = "The name of the IAM user to create."
+  default = "terraform-user"
 }
