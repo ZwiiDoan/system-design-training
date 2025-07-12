@@ -1,2 +1,0 @@
-Google’s cloud architecture center has reference architectures you can use as a starting point
-https://cloud.google.com/architecture
