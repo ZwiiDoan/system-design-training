@@ -6,9 +6,9 @@ resource "aws_iam_role" "ec2_ssm" {
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
-      Effect = "Allow"
+      Effect    = "Allow"
       Principal = { Service = "ec2.amazonaws.com" }
-      Action = "sts:AssumeRole"
+      Action    = "sts:AssumeRole"
     }]
   })
   tags = var.default_tags
@@ -20,8 +20,8 @@ resource "aws_iam_role_policy" "ssm_read_only" {
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [{
-      Effect = "Allow"
-      Action = ["ssm:GetParameter", "ssm:GetParameters", "ssm:GetParametersByPath"]
+      Effect   = "Allow"
+      Action   = ["ssm:GetParameter", "ssm:GetParameters", "ssm:GetParametersByPath"]
       Resource = "*"
     }]
   })
@@ -84,19 +84,19 @@ resource "aws_launch_template" "web_lt" {
   EOF
   )
   metadata_options {
-    http_tokens = "required"
+    http_tokens   = "required"
     http_endpoint = "enabled"
   }
   vpc_security_group_ids = [var.instance_security_group_id]
-  tags = var.default_tags
+  tags                   = var.default_tags
 }
 
 resource "aws_autoscaling_group" "web_asg" {
-  name                      = "robo-advisor-asg"
-  min_size                  = 2
-  max_size                  = 5
-  desired_capacity          = 2
-  vpc_zone_identifier       = var.private_subnets
+  name                = "robo-advisor-asg"
+  min_size            = 2
+  max_size            = 5
+  desired_capacity    = 2
+  vpc_zone_identifier = var.private_subnets
   launch_template {
     id      = aws_launch_template.web_lt.id
     version = "$Latest"
@@ -133,34 +133,34 @@ resource "aws_autoscaling_group" "web_asg" {
 }
 
 resource "aws_autoscaling_policy" "scale_out" {
-  name                   = "scale-out-policy"
-  autoscaling_group_name = aws_autoscaling_group.web_asg.name
-  adjustment_type        = "ChangeInCapacity"
-  scaling_adjustment     = 1
-  cooldown               = 300
+  name                      = "scale-out-policy"
+  autoscaling_group_name    = aws_autoscaling_group.web_asg.name
+  adjustment_type           = "ChangeInCapacity"
+  scaling_adjustment        = 1
+  cooldown                  = 300
   estimated_instance_warmup = 60
 }
 
 resource "aws_autoscaling_policy" "scale_in" {
-  name                   = "scale-in-policy"
-  autoscaling_group_name = aws_autoscaling_group.web_asg.name
-  adjustment_type        = "ChangeInCapacity"
-  scaling_adjustment     = -1
-  cooldown               = 600
+  name                      = "scale-in-policy"
+  autoscaling_group_name    = aws_autoscaling_group.web_asg.name
+  adjustment_type           = "ChangeInCapacity"
+  scaling_adjustment        = -1
+  cooldown                  = 600
   estimated_instance_warmup = 60
 }
 
 # Target tracking scaling policy (recommended)
 resource "aws_autoscaling_policy" "target_tracking" {
-  name                   = "target-tracking-policy"
-  autoscaling_group_name = aws_autoscaling_group.web_asg.name
-  policy_type            = "TargetTrackingScaling"
+  name                      = "target-tracking-policy"
+  autoscaling_group_name    = aws_autoscaling_group.web_asg.name
+  policy_type               = "TargetTrackingScaling"
   estimated_instance_warmup = 60
   target_tracking_configuration {
     predefined_metric_specification {
       predefined_metric_type = "ALBRequestCountPerTarget"
     }
-    target_value            = 50
+    target_value = 50
   }
   # See: https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html?utm_source=chatgpt.com
 }
@@ -172,11 +172,11 @@ resource "aws_autoscaling_policy" "step_scaling" {
   policy_type            = "StepScaling"
   adjustment_type        = "ChangeInCapacity"
   step_adjustment {
-    scaling_adjustment = 1
+    scaling_adjustment          = 1
     metric_interval_lower_bound = 0
     metric_interval_upper_bound = 100
   }
-  cooldown               = 300
+  cooldown                  = 300
   estimated_instance_warmup = 60
   # Triggered by CloudWatch alarm for CPUUtilization > 70% (see alarm below)
 }

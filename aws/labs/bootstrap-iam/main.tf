@@ -26,15 +26,15 @@ resource "aws_iam_access_key" "terraform_user_key" {
 }
 
 resource "aws_iam_user_policy" "terraform_user_policy" {
-  name = "bootstrap-admin-policy"
-  user = aws_iam_user.terraform_user.name
+  name   = "bootstrap-admin-policy"
+  user   = aws_iam_user.terraform_user.name
   policy = data.aws_iam_policy_document.bootstrap_admin_policy.json
 }
 
 data "aws_iam_policy_document" "bootstrap_admin_policy" {
   statement {
-    sid    = "AllowAllAdminActions"
-    effect = "Allow"
+    sid       = "AllowAllAdminActions"
+    effect    = "Allow"
     actions   = ["*"]
     resources = ["*"]
   }
@@ -50,7 +50,7 @@ resource "aws_secretsmanager_secret" "terraform_user_creds" {
 }
 
 resource "aws_secretsmanager_secret_version" "terraform_user_creds_version" {
-  secret_id     = aws_secretsmanager_secret.terraform_user_creds.id
+  secret_id = aws_secretsmanager_secret.terraform_user_creds.id
   secret_string = jsonencode({
     access_key_id     = aws_iam_access_key.terraform_user_key.id
     secret_access_key = aws_iam_access_key.terraform_user_key.secret

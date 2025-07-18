@@ -15,14 +15,14 @@ resource "aws_organizations_organization" "main" {
 }
 
 resource "aws_organizations_organizational_unit" "dev" {
-  name      = "dev"
-  parent_id = aws_organizations_organization.main.roots[0].id
+  name       = "dev"
+  parent_id  = aws_organizations_organization.main.roots[0].id
   depends_on = [aws_organizations_organization.main]
 }
 
 resource "aws_organizations_organizational_unit" "test" {
-  name      = "test"
-  parent_id = aws_organizations_organization.main.roots[0].id
+  name       = "test"
+  parent_id  = aws_organizations_organization.main.roots[0].id
   depends_on = [aws_organizations_organization.main]
 }
 
@@ -35,14 +35,14 @@ resource "aws_organizations_policy" "deny_s3_public" {
 }
 
 resource "aws_organizations_policy_attachment" "dev_scp" {
-  policy_id = aws_organizations_policy.deny_s3_public.id
-  target_id = aws_organizations_organizational_unit.dev.id
+  policy_id  = aws_organizations_policy.deny_s3_public.id
+  target_id  = aws_organizations_organizational_unit.dev.id
   depends_on = [aws_organizations_policy.deny_s3_public]
 }
 
 resource "aws_organizations_policy_attachment" "test_scp" {
-  policy_id = aws_organizations_policy.deny_s3_public.id
-  target_id = aws_organizations_organizational_unit.test.id
+  policy_id  = aws_organizations_policy.deny_s3_public.id
+  target_id  = aws_organizations_organizational_unit.test.id
   depends_on = [aws_organizations_policy.deny_s3_public]
 }
 
