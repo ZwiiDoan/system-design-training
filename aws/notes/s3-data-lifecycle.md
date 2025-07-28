@@ -29,11 +29,6 @@ graph TD
     subgraph Archive
         D
     end
-
-    style Hot fill:#f9f,stroke:#333,stroke-width:2px
-    style Warm fill:#ccf,stroke:#333,stroke-width:2px
-    style Cold fill:#cff,stroke:#333,stroke-width:2px
-    style Archive fill:#999,stroke:#333,stroke-width:2px
 ```
 
 **Lifecycle Phases:**
