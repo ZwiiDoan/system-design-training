@@ -4,4 +4,5 @@
 .terraform/
 *.tfstate
 *.tfstate.backup
-prompt.txt
+instructions.md
+archive/
