@@ -1,6 +1,6 @@
 module "frontend_bucket" {
-  source  = "terraform-aws-modules/s3-bucket/aws"
-  bucket  = var.bucket_name
+  source = "terraform-aws-modules/s3-bucket/aws"
+  bucket = var.bucket_name
   versioning = {
     enabled = true
   }
@@ -9,7 +9,7 @@ module "frontend_bucket" {
     error_document = "index.html"
   }
   force_destroy = true
-  tags = var.tags
+  tags          = var.tags
 }
 
 # Grant CloudFront OAC access to the S3 bucket

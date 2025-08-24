@@ -1,8 +1,8 @@
 # ACM certificate for custom domain (in us-east-1, required by CloudFront)
 resource "aws_acm_certificate" "frontend_cert" {
-  count               = var.custom_domain != null ? 1 : 0
-  domain_name         = var.custom_domain
-  validation_method   = "DNS"
+  count             = var.custom_domain != null ? 1 : 0
+  domain_name       = var.custom_domain
+  validation_method = "DNS"
   lifecycle {
     create_before_destroy = true
   }

@@ -17,13 +17,13 @@ resource "aws_cloudfront_distribution" "cdn" {
   }
 
   default_cache_behavior {
-    allowed_methods  = ["GET", "HEAD"]
-    cached_methods   = ["GET", "HEAD"]
-    target_origin_id = "s3-frontend"
+    allowed_methods        = ["GET", "HEAD"]
+    cached_methods         = ["GET", "HEAD"]
+    target_origin_id       = "s3-frontend"
     viewer_protocol_policy = "redirect-to-https"
     # See https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-managed-cache-policies.html#managed-cache-policy-caching-optimized
     cache_policy_id = "658327ea-f89d-4fab-a63d-7e88639e58f6" # CachingOptimized
-    compress = true
+    compress        = true
   }
 
   price_class = "PriceClass_100"
@@ -39,6 +39,6 @@ resource "aws_cloudfront_distribution" "cdn" {
       restriction_type = "none"
     }
   }
-  tags = var.tags
+  tags       = var.tags
   depends_on = [aws_acm_certificate_validation.frontend_cert_validation]
 }
