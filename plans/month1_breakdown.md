@@ -5,7 +5,11 @@
 * **Day 1 (Study - Python):** ML basics — Linear Regression (theory, math, numerical example, Python code, complexity).
 * **Day 2 (Build - Go + TypeScript):** Setup Go backend service + TypeScript API skeleton.
 * **Day 3 (Study - Python):** ML basics — Logistic Regression (theory, math, example, Python code, complexity).
-* **Day 4 (Build - Go + TypeScript):** Setup React (TypeScript) app with Tailwind, simple “Hello World” page.
+* **Day 4 (Build - Go + TypeScript):** Setup React (TypeScript) app with Tailwind v4 (Vite plugin), React Router, TanStack Query, zod, and MSW.  
+  - Use **stable stack** (React + Vite, Router, Query, Tailwind, zod, MSW).  
+  - Apply **anti-churn architecture** (`domain/app/infra/core/ui`).  
+  - Scaffold **Crypto Dashboard** page with app-level hook (`usePrices`) and mocked API via MSW.  
+  - Deliverable: Library-agnostic frontend foundation aligned with Go backend.
 * **Day 5 (Study - Python):** GenAI — Introduction to LLMs (concepts, prompting, example use cases).
 
 ## Week 2
